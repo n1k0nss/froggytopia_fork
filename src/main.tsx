@@ -19,7 +19,15 @@ const metadata = {
 
 const ethersConfig = defaultConfig({ metadata });
 
-createWeb3Modal({ ethersConfig, projectId, chains });
+createWeb3Modal({
+	ethersConfig,
+	projectId,
+	chains,
+	themeVariables: {
+		'--w3m-color-mix': '#88AA11',
+		'--w3m-color-mix-strength': 40
+	}
+});
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<React.StrictMode>

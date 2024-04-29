@@ -1,6 +1,5 @@
 import 'particles.js';
 
-
 setTimeout(() => {
     window.particlesJS('particle-lake', {
         "particles": {
@@ -113,4 +112,4 @@ setTimeout(() => {
         },
         "retina_detect": true
     })
-})
+}, 100)
